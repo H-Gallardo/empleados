@@ -24,4 +24,10 @@ class Empleado extends CI_Controller {
     echo json_encode($response);
   }
 
+  function listar(){
+    
+    $data['empleados'] = $this->Empleados->listar();
+    $this->load->view('listado_empleados', $data);
+  }
+
 }

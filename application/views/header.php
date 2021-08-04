@@ -41,7 +41,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#" onclick="linkTo('index.php/empleado/')">Alta Empleados</a></li>
-            <li><a href="#" onclick="">Listado Empleados</a></li>
+            <li><a href="#" onclick="linkTo('index.php/empleado/listar')">Listado Empleados</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

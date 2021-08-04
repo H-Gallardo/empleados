@@ -51,4 +51,19 @@ class Empleados extends CI_Model {
     }
   }
 
+  function listar(){
+    $this->db->select('EMPLEADOS_DETALLE.*');
+    $this->db->from('EMPLEADOS_DETALLE');
+    $query= $this->db->get();
+
+		if ($query->num_rows()!=0)
+		{
+			return $query->result_array();
+		}
+		else
+		{
+      log_message('DEBUG','#SIST. EMPLEADOS|EMPLEADOS|No hay empleados para listar >> ');
+			return array();
+		}
+  }
 }
